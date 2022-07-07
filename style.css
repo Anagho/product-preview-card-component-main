@@ -72,14 +72,11 @@ main {
   background: url("./images/image-product-desktop.jpg") no-repeat center left /
     cover;
   width: 100%;
-  /* background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover; */
-
   border-top-left-radius: inherit;
   border-bottom-left-radius: inherit;
 }
 
+/* Responsive - Mobile Design */
 @media screen and (max-width: 600px) {
   .card {
     display: block;
@@ -92,7 +89,13 @@ main {
     border-bottom-left-radius: 0;
     border-top-right-radius: inherit;
   }
+
+  .card-content .card-title {
+    padding-right: 0;
+  }
 }
+
+/* End Responsive - Mobile Design */
 
 .card .card-content {
   display: grid;
@@ -104,6 +107,7 @@ main {
 
 .card-content .card-title {
   font-family: "Fraunces", sans-serif;
+  padding-right: 30px;
 }
 
 .card-content .card-text {
